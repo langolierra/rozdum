@@ -5,7 +5,9 @@ jobs:
   runs-on: ubuntu-latest
   steps:
     - name: Steppping odin
-      run: echo "Hel! I am OK"
+      run: |
+          echo "Hel! I am OK"
+          echo "Yes! You are OK too"
     - name: Seconda stepos
       run: echo "Lets do it again!"
   
