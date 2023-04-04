@@ -1,0 +1,10 @@
+
+    Directory: C:\project\rozdum
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---            4/4/2023  2:40 PM            301 .gitignore
+-a---            4/4/2023  2:47 PM              0 donotreadme.txt
+-a---            4/4/2023  2:54 PM              0 list.txt
+-a---            4/4/2023  2:40 PM              8 README.md
+
