@@ -6,4 +6,4 @@ jobs:
     steps:
       - name: gettiong Codec
         run: |
-            echo ">>> ${{ github }} <<<"
+            echo ">>> ${{ toJSON(github) }} <<<"
