@@ -1,14 +1,18 @@
 name: Test Project
 on: push
+
 jobs:
   letsTest:
     runs-on: ubuntu-latest
     steps:
+
       - name: Get code
         uses: actions/checkout@v3.5.0
         with:
           clean: "true"
+
       - name: ginstal
         run: npm ci     
+
       - name: realTest
         run: npm run test         
