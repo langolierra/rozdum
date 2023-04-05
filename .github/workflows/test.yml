@@ -1,14 +1,16 @@
 name: Test Project
 on: push
 jobs:
-  lazyStart:
+  myDeploy:
     runs-on: ubuntu-latest
     steps:
-      - name: lazyEcho
-        run: echo "I am lazy printing"
+      - name: Get code
+        uses: actions/checkout@v3.5.0
+        with:
+          clean: "true"
   letsTest:
     runs-on: ubuntu-latest
-    needs: lazyStart
+    needs: myDeploy
     steps:
       - name: gettiong Codec
         run: |
