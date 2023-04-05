@@ -1,17 +1,13 @@
 name: Test Project
 on: push
 jobs:
-  myDeploy:
+  letsTest:
     runs-on: ubuntu-latest
     steps:
       - name: Get code
         uses: actions/checkout@v3.5.0
         with:
           clean: "true"
-  letsTest:
-    runs-on: ubuntu-latest
-    needs: myDeploy
-    steps:
       - name: gettiong Codec
         run: |
             echo ">>> ${{ toJSON(github) }} <<<"
