@@ -1,9 +1,19 @@
 name: Test Project
 on: push
 jobs:
+  lazyStart:
+    runs-on: ubuntu-latest
+    steps:
+      - name: lazyEcho
+        run: echo "I am lazy printing"
   letsTest:
     runs-on: ubuntu-latest
+    needs: lazyStart
     steps:
       - name: gettiong Codec
         run: |
             echo ">>> ${{ toJSON(github) }} <<<"
+            echo ">>> --------------------- <<<"
+            echo ">>> ${{ toJSON(secrets) }} <<<"
+      - name: realTest
+        run: npm run test         
