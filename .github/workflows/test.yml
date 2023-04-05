@@ -8,10 +8,7 @@ jobs:
         uses: actions/checkout@v3.5.0
         with:
           clean: "true"
-      - name: gettiong Codec
-        run: |
-            echo ">>> ${{ toJSON(github) }} <<<"
-            echo ">>> --------------------- <<<"
-            echo ">>> ${{ toJSON(secrets) }} <<<"
+      - name: gbuild
+        run: npm run build         
       - name: realTest
         run: npm run test         
