@@ -12,7 +12,7 @@ jobs:
           clean: "true"
 
       - name: ginstal
-        run: npm ci     
+        run: npm install
 
       - name: realTest
         run: npm run test         
