@@ -9,8 +9,6 @@ jobs:
         with:
           clean: "true"
       - name: ginstal
-        run: npm install     
-      - name: gbuild
-        run: npm run build         
+        run: npm ci     
       - name: realTest
         run: npm run test         
