@@ -1,0 +1,9 @@
+name: Test Project
+on: push
+jobs:
+  letsTest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: gettiong Codec
+        run: |
+            echo ">>> ${{ github }} <<<"
